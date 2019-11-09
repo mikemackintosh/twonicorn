@@ -1,4 +1,4 @@
-# Twonicorn
+Twonicorn
 -----------
 [![Actions Status](https://github.com/mikemackintosh/twonicorn/workflows/Test/badge.svg)](https://github.com/mikemackintosh/twonicorn/actions)
 
