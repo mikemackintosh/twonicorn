@@ -1,0 +1,11 @@
+curl_to_slack:
+  target: http
+  url: https://hooks.slack.com/services/XXX/XXX/XXX
+  method: post
+  headers:
+    content-type: "application/json"
+  owner: mike@domain
+  translate:
+    text: "{{.blah}}"
+    channel: "#teehee"
+    username: "Twonicorn"
