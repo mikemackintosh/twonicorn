@@ -6,6 +6,7 @@ import (
 	"errors"
 	"io"
 	"net/http"
+	"strings"
 
 	yaml "gopkg.in/yaml.v3"
 )
@@ -69,7 +70,7 @@ func (e *Entry) Validate() error {
 	}
 
 	// check that the supplied method in the config is valid
-	if !Contains(validMethods, e.Method) {
+	if !Contains(validMethods, strings.ToUpper(e.Method)) {
 		return errors.New("Invalid method")
 	}
 
