@@ -95,11 +95,14 @@ func HookHandler(w http.ResponseWriter, r *http.Request, hooks *config.Entries) 
 		return
 	}
 
-	// Let's check if the request failed or not
-	switch targetResponse.StatusCode {
-	case hook.On.SuccessCode:
-	case hook.On.FailCode:
-	default:
+	// TODO: Put this in here, but don't do callbacks yet
+	if hook.On != nil {
+		// Let's check if the request failed or not
+		switch targetResponse.StatusCode {
+		case hook.On.SuccessCode:
+		case hook.On.FailCode:
+		default:
+		}
 	}
 
 	// Get the response body and append it to the payload
