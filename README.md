@@ -1,4 +1,6 @@
 # Twonicorn
+-----------
+[![Actions Status](https://github.com/mikemackintosh/twonicorn/workflows/Test/badge.svg)](https://github.com/mikemackintosh/twonicorn/actions)
 
 Simply put, Twonicorn is an API translation service. There are many services that exist on the web that we would like to communicate natively with another system. Due to no standard API schema or Webhook data structures, this is almost impossible for the service we find ourselves configuring.
 
