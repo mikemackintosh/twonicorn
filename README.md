@@ -44,6 +44,10 @@ The JSON key of `.blah` will be transmogrified into `{"text": "{{.blah}}", ...}`
 
 ## Usage
 
+### -c, Config File
+***Default: config.yml***
+The configuration file to use. There is an included `make configtest` for validating your configuration. Using the `-keys` flag when running `cmd/configtest/configtest.go` will provide you with your `/hooks/<key>` to send your requests to.
+
 ### -p, Listener
 ***Default: localhost:8080***
 Use this option to change the listening host and port in `<ip>:<port>` format.
@@ -62,3 +66,22 @@ The following logging types are supported:
   - JSON
   - Yaml
   - Key=Value
+  
+Example JSON output:
+
+```
+{
+  "RequestID": "bn37qg7budgk2hdfpp50",
+  "Host": "localhost:8080",
+  "RemoteAddr": "127.0.0.1:64732",
+  "Method": "POST",
+  "RequestURI": "/hooks/d12aaaff28608037b/6dd5b",
+  "Proto": "HTTP/1.1",
+  "Status": 404,
+  "ContentLen": 48,
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0",
+  "Time": "09/Nov/2019:00:48:00 -0800",
+  "Referer": "",
+  "Duration": 375983061
+}
+```
