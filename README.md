@@ -2,6 +2,10 @@ Twonicorn
 -----------
 [![Actions Status](https://github.com/mikemackintosh/twonicorn/workflows/Test/badge.svg)](https://github.com/mikemackintosh/twonicorn/actions)
 
+<p align="center">
+  <img width="120px" src="https://github.com/mikemackintosh/twonicorn/raw/master/_docs/logo.png">
+</p>
+
 Simply put, Twonicorn is an API translation service. There are many services that exist on the web that we would like to communicate natively with another system. Due to no standard API schema or Webhook data structures, this is almost impossible for the service we find ourselves configuring.
 
 Think of systems that don't have native integrations within their app, or those that grant excessively permissive roles to their applications. Twonicorn head-butt's this problem by giving you the ability to configure what the destination API request should look like. Using [Go HTML template](https://golang.org/pkg/html/template/) language, you can substitute your received webhook payload into your destination schema. 
